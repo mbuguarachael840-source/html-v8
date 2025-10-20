@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+ <!--forms
+
+  input
+ types { tets email password radio checkbox colour date datetime-locale submit file}
+
+they help seek validation
+
+{
+read only
+required
+disable
+}
+
+select
+text area
+-->
+
+
+<form>
+
+  <!--   <input type="text" name="username" placeholder="Enter your username" required />
+  <input type="text" name="surname" placeholder="Enter your surname"  />
+  <input type="email" name="email" value="inctifra@yahoo.com" readonly />
+  
+  <input type="password" placeholder="Your password" />
+  
+  <input type="date" placeholder="date of birth">
+  
+  <input type="datetime-local" placeholder="time">
+  
+  <input type="hidden" name="csrfmiddlewaretoken" value="rkugwrguweGVOEW;IHG4UO;GEWRGVLIHGA;OIBHVZI;lkerbgo;rigrebg;or" > -->
+
+  <label for="username">Username: </label>
+  <input type="text" id="username" required name="username" />
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" value="user@example.com" disabled />
+  <br>
+  <label for="password">Password: </label>
+  <input type="password" id="password" placeholder="password" name="password" required />
+  <br>
+  <label for="profileAvatar">Profile Picture</label>
+  <input type="file" name="profile" id="profileAvatar" />
+
+  <div>
+    <h2>Your school</h2>
+    <input type="radio" name="school" value="jkuat" id="jkuat" > <label for="jkuat">Jkuat</label>
+    <br>
+    <input type="radio" name="school" value="ku" id="KU"> <label for="KU">KU</label>
+    <br>
+    <input type="radio" name="school" value="mku" id="MKU" checked> <label for="MKU">MKU</label>
+    <br>
+    <input type="radio" name="school" value="uon" id="UON"> <label for="UON">UON</label>
+  </div>
+
+  <div>
+    <h2>Favorite Languages</h2>
+    <input id="js" type="checkbox" name="javascript" value="js" checked />
+    <label for="js">Javascript</label>
+    <br>
+    <input id="python" type="checkbox" name="python" value="py" />
+    <label for="python">Python</label>
+    <br>
+    <input id="java" type="checkbox" name="java" value="java" checked />
+    <label for="java">Java</label>
+  </div>
+
+  <div>
+    <label for="color">Fav color</label>
+    <input type="color" name="theme-color">
+  </div>
+
+  <label for="bio">You bio: </label>
+  <br>
+  <textarea name="bio" id="bio" cols="100" rows="5" placeholder="Describe  yourself in 300 words..." /></textarea>
+  <br>
+
+  <select name="fruits" id="fruits">
+    <option>None</option>
+    <option value="mango">Mango</option>
+    <option value="pawpaw">Pawpaw</option>
+    <option value="orange" selected>Orange</option>
+  </select>
+
+  <br>
+
+  <br>
+
+  <form action="https://www.postdata.com/contact" method="post">
+    <fieldset>
+      <legend>Contact Form</legend>
+
+      <div>
+        <label for="email">Email Address:</label> <br>
+        <input type="email" name="email" id="email" placeholder="Your email address" />
+      </div>
+
+      <div>
+        <label for="message">Message:</label> <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit your message">
+      </div>
+
+    </fieldset>
+  </form>
+
+  <input type="submit" value="register">
+
+</form>
+
+  
+</body>
+</html>

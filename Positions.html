@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+</head>
+<body>
+
+    <!-- html part -->
+    
+    <!--
+position
+display
+flexbox
+grid system
+  
+it can be:
+relative
+absolute
+sticky
+-->
+
+<h2>position</h2>
+
+<div class="absolute1">
+  absolute bv1
+</div>
+<div class="absolute2">
+  absolute bv2
+</div>
+<div class="absolute3">
+  absolute bv3
+</div>
+<div class="relative">
+  relative to body
+</div>
+
+<!-- the css part -->
+
+ *{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  
+}
+
+
+.relative{
+  position:auto;
+  width:600px;
+  height:400px;
+  padding:20px;
+  border:1px solid crimson;
+  margin:50px
+  
+}
+.absolute1,
+.absolute2,
+absolute3, {
+  position:absolute;
+  border:1px solid blue;
+  padding:20px
+}
+.absolute1 { 
+  position:absolute;
+  top:30px;
+  right:30px;
+  border:1px solid blue;
+  padding 20px
+  
+}
+
+.absolute2 {
+  position:absolute;
+  bottom:30px;
+  left:30px;
+  border:1px solid blue;
+  padding 20px
+  
+}
+
+absolute3 {
+  position:absolute;
+  top:30px;
+  left:30px;
+  border:1px solid blue;
+  padding 20px
+  
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  margin: 1rem;
+  border: 2px solid #000000;
+/*  inline-flex | flex
+  
+  direction:
+  column (reserve)
+  row
+  */
+  display: flex;
+  align-items: center;
+/*   justify-content: center; */
+/*   justify-content: space-between; */
+/*   justify-content: space-evenly; */
+/*  vertical align  */
+  
+/*  align-items (center | flex-start | flex-end) 
+  
+    justify-content (center, space-between, space-around, space-evenly)
+  */
+  align-items: stretch;
+/*   flex-direction: row-reverse; */
+  justify-content: flex-start;
+  overflow: hidden;
+  align-content:stretch;
+/*   flex-wrap: wrap; */
+  
+/*  direction
+  row;
+  column
+  */
+}
+
+/* flex container */
+
+
+.container div {
+  padding: 20px;
+  border: 2px solid green;;
+  border-radius: 5px;
+  flex-basis: 200px;
+/*   flex-grow: 1; */
+/*   min-width: 400px; */
+/*  
+  order
+  */
+}
+
+.f2 {
+/*  order  */
+/*  grow  */
+/*   order: 3; */
+  flex-grow: 1;
+}
+.f1 {
+  flex-grow: 1;
+}
+
+.f3 {
+  flex-basis: 100px;
+}
+keep
+
+</body>
+</html>
